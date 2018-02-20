@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gam01_back"
+        tools:context="com.example.android.backgammonscorecounter.MainActivity">
+
+        <LinearLayout
+            android:id="@+id/all_scores"
+            style="@style/parent_ll_style">
+
+            <LinearLayout
+                android:id="@+id/black_scores"
+                style="@style/child_ll_style"
+                android:layout_marginEnd="@dimen/layout_margin">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/checker_bl"
+                    android:src="@drawable/checker_bl2" />
+
+                <EditText
+                    android:id="@+id/player_bl"
+                    style="@style/edit_text_st"
+                    android:hint="@string/hint_bl" />
+
+                <TextView
+                    android:id="@+id/bl_score"
+                    style="@style/score_style" />
+
+                <Button
+                    android:id="@+id/game_bl"
+                    style="@style/buttonstyle1"
+                    android:onClick="addOneForBlack" />
+
+                <Button
+                    android:id="@+id/gammon_bl"
+                    style="@style/buttonstyle2"
+                    android:onClick="addTwoForBlack" />
+
+                <Button
+                    android:id="@+id/backgammon_bl"
+                    style="@style/buttonstyle3"
+                    android:onClick="addThreeForBlack" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/white_scores"
+                style="@style/child_ll_style"
+                android:layout_marginStart="@dimen/layout_margin">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/checker_wh"
+                    android:src="@drawable/checker_wh" />
+
+                <EditText
+                    android:id="@+id/player_wh"
+                    style="@style/edit_text_st"
+                    android:hint="@string/hint_wh" />
+
+                <TextView
+                    android:id="@+id/wh_score"
+                    style="@style/score_style"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/game_wh"
+                    style="@style/buttonstyle1"
+                    android:onClick="addOneForWhite" />
+
+                <Button
+                    android:id="@+id/gammon_wh"
+                    style="@style/buttonstyle2"
+                    android:onClick="addTwoForWhite" />
+
+                <Button
+                    android:id="@+id/backgammon_wh"
+                    style="@style/buttonstyle3"
+                    android:onClick="addThreeForWhite" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/dice_img"
+            style="@style/dice_style"
+            android:contentDescription="@string/dice_img"
+            android:src="@drawable/dice1" />
+
+        <Button
+            android:id="@+id/reset"
+            style="@style/buttonstyle4"
+            android:onClick="resetScore" />
+
+    </RelativeLayout>
+</ScrollView>

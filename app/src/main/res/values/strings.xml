@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Backgammon Score Counter</string>
+    <string name="bckg">background</string>
+    <string name="game">game</string>
+    <string name="gammon">gammon</string>
+    <string name="bgammon">backgammon</string>
+    <string name="checker_bl">black checker</string>
+    <string name="checker_wh">white checker</string>
+    <string name="score">0</string>
+    <string name="hint_wh">Whites player name here</string>
+    <string name="hint_bl">Blacks player name here</string>
+    <string name="reset">reset score</string>
+    <string name="dice_img">dice image</string>
+</resources>
